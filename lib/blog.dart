@@ -24,7 +24,7 @@ class BlogPage extends StatelessWidget {
               children: [
                 SliderPage(),
                 AboutPage(),
-                InternSession(),
+                InternSession(skills: [],),
               ],
             ),
           ),

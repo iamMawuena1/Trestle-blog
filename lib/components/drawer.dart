@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trestle_blog/blog.dart';
 import 'package:trestle_blog/pages/facilitators.dart';
 import 'package:trestle_blog/pages/settings.dart';
+import 'package:trestle_blog/pages/about.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -34,14 +35,14 @@ class MyDrawer extends StatelessWidget {
         ),
       );
     }
-    //  void aboutPage() {
-    //   Navigator.push(
-    //     context,
-    //     MaterialPageRoute(
-    //       builder: ((context) => const AboutPage()),
-    //     ),
-    //   );
-    // }
+     void aboutPage() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const AboutPage()),
+        ),
+      );
+    }
 
     return Drawer(
       child: ListView(
@@ -63,11 +64,11 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             currentAccountPicture: CircleAvatar(
-              backgroundImage: AssetImage("assets/rpa.jpg"),
+              backgroundImage: AssetImage("assets/profile1.jpg"),
             ),
             otherAccountsPictures: [
-              FlutterLogo(),
-              FlutterLogo(),
+              CircleAvatar(backgroundImage: AssetImage("assets/profile2.jpg"),),
+              CircleAvatar(backgroundImage: AssetImage("assets/profile3.jpg"),),
             ],
           ),
           ListTile(
@@ -141,7 +142,7 @@ class MyDrawer extends StatelessWidget {
               Icons.arrow_forward_ios_rounded,
               size: 18.0,
             ),
-            onTap: () {},
+            onTap: aboutPage,
           ),
         ],
       ),

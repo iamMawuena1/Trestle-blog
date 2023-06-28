@@ -10,7 +10,7 @@ class SliderPage extends StatefulWidget {
 
 class _SliderPageState extends State<SliderPage> {
   List<String> images = [
-    "assets/appdev.jpg",
+    "assets/flutter.png",
     "assets/rpa.jpg",
     "assets/webdev.jpg",
   ];

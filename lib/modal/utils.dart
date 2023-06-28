@@ -1,8 +1,11 @@
-class Sessions {
+class Skills {
   final String title;
   final String description;
   final String imageUrl;
 
-  Sessions(this.title, this.description, this.imageUrl);
-
+  Skills({
+    required this.title,
+    required this.description,
+    required this.imageUrl,
+  });
 }
