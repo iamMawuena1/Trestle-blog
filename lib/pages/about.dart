@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trestle_blog/components/constant.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -17,10 +18,16 @@ class AboutPage extends StatelessWidget {
               fontSize: 30,
             ),
           ),
-          const Text(
-            "Trestle Academy Ghana is founded to serve as a hive that will augment with the teachings of Ghana's tertiary institutionsby equipping the youth with skills in emerging technologies.Though Artificial Intelligence is at the core of our mission, we endeavour to mentorship in design-thinking research,leadership and entrepreneurship.The academy aims to promote the spirit of collaboration, innovation,entrepreneurship and leadership among the Ghanaian to become globallycompetitive most importantly through our partnership programmes with local and foreign companies.",
+           Text(
+            "Trestle Academy Ghana is founded to serve as a hive that will augment with the teachings of Ghana's tertiary"
+            "institutionsby equipping the youth with skills in emerging technologies."
+            "Though Artificial Intelligence is at the core of our mission," 
+            "we endeavour to mentorship in design-thinking research,leadership and entrepreneurship."
+            "The academy aims to promote the spirit of collaboration, innovation,entrepreneurship"
+            "and leadership among the Ghanaian to become globallycompetitive most importantly "
+            "through our partnership programmes with local and foreign companies.",
             style: TextStyle(
-              color: Colors.grey,
+              color: textColor,
               fontWeight: FontWeight.w300,
               fontSize: 18.0,
             ),
@@ -37,7 +44,7 @@ class AboutPage extends StatelessWidget {
             child: const Text(
               'www.trestleacademyghana.org',
               style: TextStyle(
-                color: Colors.blue,
+                color: kBlue,
                 fontSize: 18.0,
                 fontStyle: FontStyle.italic,
               ),
@@ -50,13 +57,15 @@ class AboutPage extends StatelessWidget {
             style: TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.bold,
-              color: Colors.black,
+              color: kBlack,
             ),
           ),
-          const Text(
-            "Artificial Intelligence, Data Science, Machine Learning, Entrepreneurship, Web3, IoT, Robotics Process Automation, and Brand Development",
+          Text(
+            "Artificial Intelligence, Data Science," 
+            "Machine Learning, Entrepreneurship," 
+            "Web3, IoT, Robotics Process Automation, and Brand Development",
             style: TextStyle(
-              color: Colors.grey,
+              color: textColor,
               fontWeight: FontWeight.w300,
               fontSize: 18.0,
             ),

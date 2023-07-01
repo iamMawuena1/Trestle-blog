@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trestle_blog/blog.dart';
+import 'package:trestle_blog/pages/login.dart';
+
 
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BlogPage(),
+      home: LoginPage(),
     );
   }
 }

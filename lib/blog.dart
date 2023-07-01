@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trestle_blog/components/constant.dart';
 import 'package:trestle_blog/components/drawer.dart';
 import 'package:trestle_blog/components/slider.dart';
 import 'package:trestle_blog/pages/about.dart';
@@ -11,12 +12,14 @@ class BlogPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Trestle Academy Ghana',),
-        backgroundColor: Colors.purple,
+        title: const Text(
+          'Trestle Academy Ghana',
+        ),
+        backgroundColor: kColor,
         elevation: 0,
       ),
       drawer: const MyDrawer(),
-      body:  const SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(top: 10.0),
@@ -24,7 +27,7 @@ class BlogPage extends StatelessWidget {
               children: [
                 SliderPage(),
                 AboutPage(),
-                InternSession(skills: [],),
+                InternSession(skills: []),
               ],
             ),
           ),

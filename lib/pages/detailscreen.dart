@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trestle_blog/components/constant.dart';
+import 'package:trestle_blog/components/enrol_dialog.dart';
 import 'package:trestle_blog/modal/utils.dart';
 
 class DetailScreen extends StatelessWidget {
@@ -33,7 +35,7 @@ class DetailScreen extends StatelessWidget {
                       },
                       child: const Icon(
                         Icons.arrow_back_ios_new_outlined,
-                        color: Colors.white,
+                        color: kWhite,
                       ),
                     ),
                   ),
@@ -52,19 +54,25 @@ class DetailScreen extends StatelessWidget {
                         fontSize: 24.0,
                       ),
                     ),
-                    const SizedBox(height: 10.0),
+                    const SizedBox(height: kPadding / 2),
                     Text(
                       skills.description,
-                      style: const TextStyle(color: Colors.grey),
+                      style: TextStyle(color: textColor),
                     ),
-                    const SizedBox(height: 20.0),
+                    const SizedBox(height: kPadding),
                     MaterialButton(
                       height: 50,
                       minWidth: double.infinity,
                       elevation: 2.0,
-                      color: Colors.purple,
+                      color: kColor,
                       child: const Text("Enroll Now"),
-                      onPressed: () {},
+                      onPressed: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return const EnrollDialogPane();
+                            });
+                      },
                     ),
                   ],
                 ),

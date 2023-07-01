@@ -17,10 +17,9 @@ class _InternSessionState extends State<InternSession> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailScreen(
-          skills: skills),
-        ),
-      );
+        builder: (context) => DetailScreen(skills: skills),
+      ),
+    );
   }
 
   @override
@@ -50,14 +49,11 @@ class _InternSessionState extends State<InternSession> {
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.black54,
-                          ),
-                        ),
+                      child: SizedBox(
+                        height: 80,
+                        width: 100,
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image(
                               image: AssetImage(skills[index].imageUrl),
@@ -68,7 +64,8 @@ class _InternSessionState extends State<InternSession> {
                             ),
                             Text(
                               skills[index].title,
-                              style: const TextStyle(fontWeight: FontWeight.w600),
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.w600),
                             ),
                           ],
                         ),
